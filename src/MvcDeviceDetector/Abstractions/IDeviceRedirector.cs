@@ -3,8 +3,8 @@
 namespace MvcDeviceDetector.Abstractions
 {
 
-	public interface IDeviceRedirector
-	{
-		void RedirectToDevice(HttpContext context, string code = "");
-	}
+    public interface IDeviceRedirector
+    {
+        void RedirectToDevice(HttpContext context, string code = "");
+    }
 }

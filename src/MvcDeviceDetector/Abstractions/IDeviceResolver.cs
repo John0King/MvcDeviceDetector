@@ -3,8 +3,8 @@
 namespace MvcDeviceDetector.Abstractions
 {
 
-	public interface IDeviceResolver
-	{
-		IDevice ResolveDevice(HttpContext context);
-	}
+    public interface IDeviceResolver
+    {
+        IDevice ResolveDevice(HttpContext context);
+    }
 }
