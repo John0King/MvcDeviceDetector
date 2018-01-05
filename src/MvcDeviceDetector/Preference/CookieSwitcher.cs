@@ -1,11 +1,8 @@
-﻿namespace MvcDeviceDetector.Preference
+﻿using Microsoft.AspNetCore.Http;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Preference
 {
-	#region usings
-
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-
-	#endregion
 
 	public class CookieSwitcher : IDeviceSwitcher
 	{

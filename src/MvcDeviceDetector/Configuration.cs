@@ -1,19 +1,16 @@
-﻿namespace MvcDeviceDetector
+﻿using System;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+using MvcDeviceDetector.Device;
+using MvcDeviceDetector.Preference;
+
+namespace MvcDeviceDetector
 {
-	#region usings
-
-	using System;
-	using Abstractions;
-	using Device;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.AspNetCore.Mvc.Razor;
-	using Microsoft.AspNetCore.Routing;
-	using Microsoft.Extensions.DependencyInjection;
-	using Microsoft.Extensions.DependencyInjection.Extensions;
-	using Microsoft.Extensions.Options;
-	using Preference;
-
-	#endregion
 
 	public static class Configuration
 	{

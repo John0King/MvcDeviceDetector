@@ -1,16 +1,12 @@
-﻿namespace MvcDeviceDetector
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector
 {
-	#region usings
-
-	using System;
-	using System.Collections.Generic;
-	using Abstractions;
-	using Microsoft.AspNetCore.Mvc.Razor;
-	using Microsoft.AspNetCore.Mvc.Razor.Internal;
-	using Microsoft.Extensions.Options;
-
-	#endregion
-
 	public class DeviceViewLocationExpander : IViewLocationExpander
 	{
 		private const string ValueKey = "device";

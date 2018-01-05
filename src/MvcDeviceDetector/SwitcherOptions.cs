@@ -1,10 +1,7 @@
-﻿namespace MvcDeviceDetector
+﻿using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector
 {
-	#region usings
-
-	using Abstractions;
-
-	#endregion
 
 	public class SwitcherOptions
 	{

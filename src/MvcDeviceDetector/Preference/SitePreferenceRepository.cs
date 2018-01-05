@@ -1,15 +1,11 @@
-﻿namespace MvcDeviceDetector.Preference
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Preference
 {
-	#region usings
-
-	using System.Collections.Generic;
-	using System.Linq;
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.Extensions.Options;
-
-	#endregion
-
 	public class SitePreferenceRepository : ISitePreferenceRepository
 	{
 		private readonly IDeviceResolver _deviceResolver;

@@ -1,11 +1,8 @@
-﻿namespace MvcDeviceDetector.Device
+﻿using Microsoft.AspNetCore.Http;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Device
 {
-	#region usings
-
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-
-	#endregion
 
 	public class DeviceAccessor : IDeviceAccessor
 	{

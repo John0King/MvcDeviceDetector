@@ -1,14 +1,11 @@
-﻿namespace MvcDeviceDetector.Device
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Device
 {
-	#region usings
-
-	using System.Collections.Generic;
-	using System.Linq;
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.Extensions.Options;
-
-	#endregion
 
 	public class AgentResolver : IDeviceResolver
 	{
@@ -66,7 +63,7 @@
 			}
 
 			// UserAgent keyword detection of Tablet devices
-			if (agent != null && TabletUserAgentKeywords.Any(keyword => agent.Contains(keyword) && !agent.Contains("mobile") || (agent != null && agent.Contains("ipad")))
+			if (agent != null && TabletUserAgentKeywords.Any(keyword => agent.Contains(keyword) && !agent.Contains("mobile") || (agent != null && agent.Contains("ipad"))))
 			{
 				return _deviceFactory.Tablet();
 			}

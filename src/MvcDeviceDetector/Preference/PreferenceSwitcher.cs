@@ -1,15 +1,11 @@
-﻿namespace MvcDeviceDetector.Preference
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Preference
 {
-	#region usings
-
-	using System.Threading.Tasks;
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.AspNetCore.Routing;
-	using Microsoft.Extensions.Options;
-
-	#endregion
-
 	public class PreferenceSwitcher
 	{
 		private readonly IDeviceFactory _deviceFactory;

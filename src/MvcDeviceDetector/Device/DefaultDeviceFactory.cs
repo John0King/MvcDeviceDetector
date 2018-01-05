@@ -1,11 +1,8 @@
-﻿namespace MvcDeviceDetector.Device
+﻿using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Device
 {
-	#region usings
-
-	using Abstractions;
-	using Microsoft.Extensions.Options;
-
-	#endregion
 
 	public class DefaultDeviceFactory : IDeviceFactory
 	{

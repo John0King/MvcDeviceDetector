@@ -1,14 +1,10 @@
-﻿namespace MvcDeviceDetector.Preference
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.Extensions.Options;
+using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Preference
 {
-	#region usings
-
-	using Abstractions;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.AspNetCore.Http.Extensions;
-	using Microsoft.Extensions.Options;
-
-	#endregion
-
 	public class DeviceRedirector : IDeviceRedirector
 	{
 		private readonly IOptions<DeviceOptions> _options;

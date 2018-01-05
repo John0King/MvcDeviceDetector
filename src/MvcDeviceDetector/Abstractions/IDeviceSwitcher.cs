@@ -1,10 +1,7 @@
-﻿namespace MvcDeviceDetector.Abstractions
+﻿using Microsoft.AspNetCore.Http;
+
+namespace MvcDeviceDetector.Abstractions
 {
-	#region usings
-
-	using Microsoft.AspNetCore.Http;
-
-	#endregion
 
 	public interface IDeviceSwitcher
 	{

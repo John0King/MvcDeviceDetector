@@ -1,10 +1,7 @@
-﻿namespace MvcDeviceDetector
+﻿using System.Collections.Generic;
+
+namespace MvcDeviceDetector
 {
-	#region usings
-
-	using System.Collections.Generic;
-
-	#endregion
 
 	public class DeviceOptions
 	{

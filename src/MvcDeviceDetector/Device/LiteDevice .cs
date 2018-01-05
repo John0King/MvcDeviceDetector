@@ -1,11 +1,7 @@
-﻿namespace MvcDeviceDetector.Device
+﻿using MvcDeviceDetector.Abstractions;
+
+namespace MvcDeviceDetector.Device
 {
-	#region usings
-
-	using Abstractions;
-
-	#endregion
-
 	public class LiteDevice : IDevice
 	{
 		private readonly DeviceType _deviceType;
